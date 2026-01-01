@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+        <form id="validation-form">
+            <h1 class="validation-form-title">Form Validation Tool</h1>
+            <p class="validation-form-description">TypeScript-powered validation with custom rules</p>
+
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input   type="text" name="username" id="username" placeholder="Enter Username">
+                <div class="requirement">Must be 3-20 characters, alphanumeric only</div>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email Address</label>
+                <input  type="email" name="email" id="email" placeholder="Enter email">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Username</label>
+                <input  type="password" name="password" id="password" placeholder="Enter Password">
+                <div class="requirement">Min 8 chars, 1 uppercase, 1 lowercase, 1 number</div>
+            </div>
+
+            <div class="input-group">
+                <label for="age">Age</label>
+                <input  type="number" name="age" id="age" placeholder="Enter Age">
+                <div class="requirement">Must be between 18 and 120</div>
+            </div>
+
+            <div class="input-group">
+                <label for="country">Country</label>
+                <select  id="country" name="country">
+                    <option value="">Select a country</option>
+                    <option value="us">Nepal</option>
+                    <option value="uk">India</option>
+                    <option value="ca">China</option>
+                    <option value="au">Bhutan</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <button type="submit"> Validate & Submit</button>
+
+
+        </form>
+        <script src="main.js"></script>
+
+</body>
+</html>
